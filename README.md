@@ -57,6 +57,19 @@
 
 <br>
 
+## Pagespeed Insights Score:
+  
+- ||
+  | :-----: |
+  |  <b>Overall score 98.6% for Both Mobile & Desktop</b><br>(Below score is for mobile devices) |
+  | |
+  | <img src='./images/pagespeed-insights-score.svg' alt='Scoreboard'> |
+  | |
+  | Check out [**Pagespeed Insights**](https://pagespeed.web.dev/analysis/https-0xabdulkhalid-github-io-loopstudios-landing-page/knvnf771y3?form_factor=mobile) to get live score |
+  ||
+
+<br>
+
 ## The Challenge
 
 - The challenge is to build out this Loopstudios Landing Page and get it looking as close to the design as possible.
