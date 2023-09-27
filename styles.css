@@ -171,7 +171,7 @@ header {
   position: fixed;
   width: 100%;
   padding: 2.5rem 1.5rem 2rem 1.5rem;
-  z-index: 1;
+  z-index: 6;
   transition: 0.4s ease;
 }
 
@@ -300,13 +300,23 @@ header {
   color: white;
 }
 
-.creations__block {
+.creations__block a {
   font-size: 1.5rem;
-  padding: 3rem 1.3rem 1.5rem 1.3rem;
   line-height: 1.5rem;
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
   color: white;
+  height: 100%;
+}
+
+.creations__block {
+    background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  padding: 3rem 1.3rem 1.5rem 1.3rem;
+    margin: 0 1.5rem;
+}
+
+.creations__list {
+  display: grid;
+  gap: 1.5rem;
 }
 
 .creations__block:first-of-type {
@@ -403,6 +413,17 @@ button,
 a {
   transition: 0.5s ease;
 }
+@media (min-width: 35em) {
+  .hero-banner__heading {
+    max-width: 30.5rem;
+    padding: 2.7rem 2.5rem;
+    padding-bottom: 2.7rem;
+    line-height: 4.3rem;
+    margin: 0;
+    letter-spacing: .08rem;
+    padding-bottom: 1.6rem;
+  }
+}
 @media (min-width: 56em) {
   header {
     padding: 4rem 10.2rem;
@@ -447,14 +468,8 @@ a {
   }
 
   .hero-banner__heading {
-    font-size: 4.25rem;
     max-width: 40.5rem;
-    padding: 2.7rem 2.5rem;
-    padding-bottom: 2.7rem;
-    line-height: 4.3rem;
-    margin: 0;
-    letter-spacing: .08rem;
-    padding-bottom: 1.6rem;
+    font-size: 4.25rem;
   }
 
   .main__hero-section {
@@ -497,19 +512,19 @@ a {
   .main__creations {
     margin: 0 10.2rem;
     max-width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 5rem 1fr 1fr;
     min-height: 65.5rem;
-    gap: 2rem;
-    row-gap: 2.2rem;
+    row-gap: 3.3rem;
     place-self: unset;
     width: unset;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 4rem 1fr;
   }
 
-  .creations__action-btn,
-  .creations__heading {
+  .creations__list {
     grid-column: span 2;
-    order: unset;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
   }
 
   .creations__heading {
@@ -523,17 +538,23 @@ a {
     margin: -0.3rem 0 0 0;
     padding: .7rem 2.5rem .6rem 2.5rem;
     height: 2.5rem;
+    order: unset;
   }
 
   .creations__block {
     padding: 2rem 2.5rem;
+    margin: 0;
+  }
+
+  .creations__block a {
     display: grid;
     align-content: end;
     font-size: 2rem;
     line-height: 2rem;
-    word-spacing: 0.1rem;
+    letter-spacing: -.03rem;
     transition: .5s ease;
     position: relative;
+    z-index: 2;
   }
 
   .creations__block:first-of-type {
@@ -577,7 +598,7 @@ a {
     position: absolute;
     content: "";
     inset: 0;
-    background: linear-gradient(#fffc 55%, #000a);
+    background: linear-gradient(#fff8 55%, #000a);
     opacity: 0;
     transition: .6s ease;
   }
