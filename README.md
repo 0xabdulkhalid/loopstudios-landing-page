@@ -51,7 +51,7 @@
 
 - |||
   | :----- | :----- |
-  | Solution URL: | [To be posted :hourglass_flowing_sand:](#link) |
+  | Solution URL: | [LOOPSTUDIOS LANDING PAGE 🎯 [ ACCESSIBLE - BEM - VANILLA CSS3 ]](https://www.frontendmentor.io/solutions/loopstudios-landing-page-accessible-bem-vanilla-css3-YQuDID-jk_) |
   | Live Site URL: | [https://0xabdulkhalid.github.io/loopstudios-landing-page/](https://0xabdulkhalid.github.io/loopstudios-landing-page/) |
   |||
 
